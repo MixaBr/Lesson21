@@ -28,12 +28,11 @@ class Dog:
 
 metis = Dog(40,80,"Astra",1)
 sheepdog = Dog(80,120,"Zuk",4)
-
 print(metis.__dict__)
 print(sheepdog.__dict__)
-print(metis.jump(1.5))
-print(sheepdog.run(30,4000))
-print(sheepdog.bark("Yes"))
+metis.jump(1.5)
+sheepdog.run(30,4000)
+sheepdog.bark("Yes")
 print(metis.name)
 Dog.change_name(metis)
 print(metis.name)

@@ -22,8 +22,7 @@ class Dog:
         else:
             print(f'Собака {self.name} не лает')
 
-    def change_name(self):
-        new_name = input("Введите новое имя собаки:")
+    def change_name(self, new_name):
         self.name = new_name
 
 metis = Dog(40,80,"Astra",1)
@@ -34,5 +33,6 @@ metis.jump(1.5)
 sheepdog.run(30,4000)
 sheepdog.bark("Yes")
 print(metis.name)
-Dog.change_name(metis)
+new_name = input("Введите новое имя собаки:")
+Dog.change_name(metis, new_name)
 print(metis.name)
